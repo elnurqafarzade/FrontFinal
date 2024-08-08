@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nest Mart & Grocery</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/asseets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-light py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="logo">
+            </div>
+            <div class="search-bar d-flex flex-grow-1 mx-4">
+                <select class="form-control mr-2">
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+                    <option value="all">All Categories</option>
+
+                </select>
+                <input type="text" class="form-control" placeholder="Search for items...">
+            </div>
+            <div class="location">
+                <select class="form-control">
+                    <option value="" disabled selected>Your Location</option>
+                    <option value="Alabama">Alabama</option>
+                    <option value="Alaska">Alaska</option>
+                    <option value="Arizona">Arizona</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Maryland">Maryland</option>
+                    <option value="Nevada">Nevada</option>
+                    <option value="NewJersey">New Jersey</option>
+                    <option value="NewMexico">New Mexico</option>
+                    <option value="NewYork">New York</option>
+                </select>
+            </div>
+            <div class="user-menu d-flex align-items-center ml-4">
+                <a href="#"  class="text-dark mx-2"><i class="fa fa-refresh" aria-hidden="true"></i>Compare <span class="badge badge-success">3</span></a>
+                <a href="#" class="text-dark mx-2"><i class="fa fa-heart" aria-hidden="true"></i>Wishlist <span class="badge badge-success">6</span></a>
+                <a href="#" class="text-dark mx-2"><i class="fa-solid fa-cart-shopping"></i>Cart <span class="badge badge-success">2</span></a>
+                <a href="#" class="text-dark mx-2"><i class="fa-solid fa-user"></i>Account</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" style="background-color: #3BB77E; color: white;"  href="#" id="browseCategories" role="button" data-toggle="dropdown">Browse All Categories</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Milks and Dairies</a>
+                            <a class="dropdown-item" href="#">Wines & Drinks</a>
+                            <a class="dropdown-item" href="#">Clothing & Beauty</a>
+                            <a class="dropdown-item" href="#">Fresh Seafood</a>
+                            <a class="dropdown-item" href="#">Pet Foods & Toy</a>
+                            <a class="dropdown-item" href="#">Fast Food</a>
+                            <a class="dropdown-item" href="#">Baking Material</a>
+                            <a class="dropdown-item" href="#">Vegetables</a>
+                            <a class="dropdown-item" href="#">Fresh Fruit</a>
+                            <a class="dropdown-item" href="#">Bread and Juice</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Show more...</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vendors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Mega menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Pages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section class="hero py-5 text-center">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <h1>Fresh Vegetables</h1>
+                        <p>Big discount</p>
+                        <p>Save up to 50% off on your first order</p>
+                     <form class="form-inline justify-content-center">
+                     <input type="email" class="form-control mb-2 mr-2" placeholder="Your email address">
+                        <button type="submit" class="btn btn-success mb-2">Subscribe</button>
+                        </form>
+                      </div>
+                      <div class="carousel-item">
+                        <h1>Fresh Vegetables</h1>
+                <p>Big discount</p>
+                <p>Save up to 50% off on your first order</p>
+                <form class="form-inline justify-content-center">
+                    <input type="email" class="form-control mb-2 mr-2" placeholder="Your email address">
+                    <button type="submit" class="btn btn-success mb-2">Subscribe</button>
+                </form>
+                      </div>
+                  
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </div>
+            </div>
+        </section>
+
+        <section class="featured-categories my-5">
+            <div class="container">
+                <h2 class="text-center">Featured Categories</h2>
+                <div class="text-center my-3">
+                    <a href="#" class="category-link">Cake & Milk</a>
+                    <a href="#" class="category-link">Coffes & Teas</a>
+                    <a href="#" class="category-link">Pet Foods</a>
+                    <a href="#" class="category-link">Vegetables</a>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-13.png" class="card-img-top" alt="Cake & Milk">
+                            <div class="card-body">
+                                <h5 class="card-title">Cake & Milk</h5>
+                                <p class="card-text">26 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-12.png" class="card-img-top" alt="Organic Kiwi">
+                            <div class="card-body">
+                                <h5 class="card-title">Organic Kiwi</h5>
+                                <p class="card-text">28 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-11.png" class="card-img-top" alt="Peach">
+                            <div class="card-body">
+                                <h5 class="card-title">Peach</h5>
+                                <p class="card-text">14 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-9.png" class="card-img-top" alt="Red Apple">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Apple</h5>
+                                <p class="card-text">54 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-3.png" class="card-img-top" alt="Snack">
+                            <div class="card-body">
+                                <h5 class="card-title">Snack</h5>
+                                <p class="card-text">56 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-1.png" class="card-img-top" alt="Vegetables">
+                            <div class="card-body">
+                                <h5 class="card-title">Vegetables</h5>
+                                <p class="card-text">72 items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-2.png" class="card-img-top" alt="Strawberry">
+                            <div class="card-body">
+                                <h5 class="card-title">Strawberry</h5>
+                                <p class="card-text">36 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-4.png" class="card-img-top" alt="Black Plum">
+                            <div class="card-body">
+                                <h5 class="card-title">Black Plum</h5>
+                                <p class="card-text">123 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-5.png" class="card-img-top" alt="Custard Apple">
+                            <div class="card-body">
+                                <h5 class="card-title">Custard Apple</h5>
+                                <p class="card-text">34 items</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-2 mb-3">
+                        <div class="card text-center">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/cat-14.png" class="card-img-top" alt="Coffe & Tea">
+                            <div class="card-body">
+                                <h5 class="card-title">Coffe & Tea</h5>
+                                <p class="card-text">89 items</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+     <section class="products py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-1.png" class="card-img-top" alt="Onions">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Everyday Fresh & Clean with Our Products</h5>
+                            <a href="#" class="btn btn-success">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-2.png" class="card-img-top" alt="Strawberry Juice">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Make your Breakfast Healthy and Easy</h5>
+                            <a href="#" class="btn btn-success">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card product-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-3.png" class="card-img-top" alt="Vegetables">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">The best Organic Products Online</h5>
+                            <a href="#" class="btn btn-success">Shop Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    <section class="popular-products py-5">
+        <div class="container">
+            <h2 class="mb-4">Popular Products</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <div class="badge-container">
+                            <span class="badge badge-danger">Hot</span>
+                        </div>
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Snack</h6>
+                            <h5 class="card-title">Seeds of Change Organic Quinoa, Brown, & Red Rice</h5>
+                            <p class="card-text">By NestFood</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$28.85</span>
+                                <span class="original-price">$32.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <div class="badge-container">
+                            <span class="badge badge-primary">Sale</span>
+                        </div>
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-2-1.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Hodo Foods</h6>
+                            <h5 class="card-title">All Natural Italian-Style Chicken Meatballs</h5>
+                            <p class="card-text">By Stouffer</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(3.5)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$52.85</span>
+                                <span class="original-price">$55.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <div class="badge-container">
+                            <span class="badge badge-success">New</span>
+                        </div>
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-3-1.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Snack</h6>
+                            <h5 class="card-title">Angie's Boomchickapop Sweet & Salty Kettle Corn</h5>
+                            <p class="card-text">By StarKist</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$48.85</span>
+                                <span class="original-price">$52.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-4-1.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Vegetables</h6>
+                            <h5 class="card-title">Foster Farms Takeout Crispy Classic Buffalo Wings</h5>
+                            <p class="card-text">By NestFood</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$17.85</span>
+                                <span class="original-price">$19.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-6-1.jpg" class="card-img-top" alt="Product 6">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Hodo Foods</h6>
+                            <h5 class="card-title">Chobani Complete Vanilla Greek Yogurt</h5>
+                            <p class="card-text">By NestFood</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$54.85</span>
+                                <span class="original-price">$55.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <div class="badge-container">
+                            <span class="badge badge-primary">Sale</span>
+                        </div>
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-7-1.jpg" class="card-img-top" alt="Product 7">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Meats</h6>
+                            <h5 class="card-title">Canada Dry Ginger Ale - 2 L Bottle - 200ml - 400g</h5>
+                            <p class="card-text">By NestFood</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$32.85</span>
+                                <span class="original-price">$33.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-8-1.jpg" class="card-img-top" alt="Product 8">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Snack</h6>
+                            <h5 class="card-title">Encore Seafoods Stuffed Alaskan Salmon</h5>
+                            <p class="card-text">By StarKist</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$35.85</span>
+                                <span class="original-price">$37.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card products-card">
+                        <div class="badge-container">
+                            <span class="badge badge-danger">Hot</span>
+                        </div>
+                        <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-9-1.jpg" class="card-img-top" alt="Product 9">
+                        <div class="card-body">
+                            <h6 class="card-subtitle mb-2 text-muted">Coffees</h6>
+                            <h5 class="card-title">Gorton's Beer Battered Fish Fillets with soft paper</h5>
+                            <p class="card-text">By Old El Paso</p>
+                            <div class="rating">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span>
+                                <span class="fa fa-star"></span>
+                                <span>(4.0)</span>
+                            </div>
+                            <p class="price">
+                                <span class="current-price">$23.85</span>
+                                <span class="original-price">$25.00</span>
+                            </p>
+                            <a href="#" class="btn btn-success btn-block">Add</a>
+                        </div>
+                    </div>
+                </div>
+                
+    </section>
+   
+<section>
+    <div class="container">
+        <h1 class="my-4">Daily Best Sells</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="featured-section">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-4.png" alt="Nature Image">
+                    <button class="btn btn-shop">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="prod-card">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" alt="Product Image">
+                            <h3>Blue Diamond Almonds Lightly Salted</h3>
+                            <p class="price">$238.85 <span class="old-price">$245.8</span></p>
+                            <div class="rating">★★★★☆</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button class="btn btn-success btn-block mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="prod-card">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" alt="Product Image">
+                            <h3>Seeds of Change Organic Quinoa, Brown</h3>
+                            <p class="price">$238.85 <span class="old-price">$245.8</span></p>
+                            <div class="rating">★★★★☆</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button class="btn btn-success btn-block mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="prod-card">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" alt="Product Image">
+                            <h3>All Natural Italian-Style Chicken Meatballs</h3>
+                            <p class="price">$238.85 <span class="old-price">$245.8</span></p>
+                            <div class="rating">★★★★☆</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button class="btn btn-success btn-block mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="prod-card">
+                            <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/product-1-1.jpg" alt="Product Image">
+                            <h3>Angie’s Boomchickapop Sweet and wownmies</h3>
+                            <p class="price">$238.85 <span class="old-price">$245.8</span></p>
+                            <div class="rating">★★★★☆</div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <button class="btn btn-success btn-block mt-2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="my-4">Deals Of The Day</h1>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="deal-card">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-5.png" alt="Product Image">
+                    <div class="timer">
+                        <div>228 Days</div>
+                        <div>13 Hours</div>
+                        <div>11 Mins</div>
+                        <div>36 Sec</div>
+                    </div>
+                    <div class="p-3">
+                        <h3>Seeds of Change Organic Quinoa, Brown</h3>
+                        <div class="rating">★★★★☆</div>
+                        <p>By NestFood</p>
+                        <p class="price">$32.85 <span class="old-price">$33.8</span></p>
+                        <button class="btn btn-success btn-block">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-card">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-5.png" alt="Product Image">
+                    <div class="timer">
+                        <div>624 Days</div>
+                        <div>13 Hours</div>
+                        <div>11 Mins</div>
+                        <div>36 Sec</div>
+                    </div>
+                    <div class="p-3">
+                        <h3>Perdue Simply Smart Organics Gluten Free</h3>
+                        <div class="rating">★★★★☆</div>
+                        <p>By Old El Paso</p>
+                        <p class="price">$24.85 <span class="old-price">$26.8</span></p>
+                        <button class="btn btn-success btn-block">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-card">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-5.png" alt="Product Image">
+                    <div class="timer">
+                        <div>958 Days</div>
+                        <div>13 Hours</div>
+                        <div>11 Mins</div>
+                        <div>36 Sec</div>
+                    </div>
+                    <div class="p-3">
+                        <h3>Signature Wood-Fired Mushroom and Caramelized</h3>
+                        <div class="rating">★★★☆☆</div>
+                        <p>By Progresso</p>
+                        <p class="price">$12.85 <span class="old-price">$13.8</span></p>
+                        <button class="btn btn-success btn-block">Add</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="deal-card">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/banner/banner-5.png" alt="Product Image">
+                    <div class="timer">
+                        <div>200 Days</div>
+                        <div>13 Hours</div>
+                        <div>11 Mins</div>
+                        <div>36 Sec</div>
+                    </div>
+                    <div class="p-3">
+                        <h3>Simply Lemonade with Raspberry Juice</h3>
+                        <div class="rating">★★★☆☆</div>
+                        <p>By Yoplait</p>
+                        <p class="price">$15.85 <span class="old-price">$16.8</span></p>
+                        <button class="btn btn-success btn-block">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 prd-section">
+                <h3>Top Selling</h3>
+                <div class="prd-item">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/thumbnail-1.jpg" alt="Product Image">
+                    <div>
+                        <div>Nestle Original Coffee-Mate Coffee Creamer</div>
+                        <div class="rating">★★★★☆</div>
+                        <div>
+                            <span class="price">$32.85</span>
+                            <span class="old-price">$33.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-3 prd-section">
+                <h3>Trending Products</h3>
+                <div class="prd-item">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/thumbnail-1.jpg" alt="Product Image">
+                    <div>
+                        <div>Organic Cage-Free Grade A Large Brown Eggs</div>
+                        <div class="rating">★★★★☆</div>
+                        <div>
+                            <span class="price">$32.85</span>
+                            <span class="old-price">$33.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 prd-section">
+                <h3>Recently Added</h3>
+                <div class="prd-item">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/thumbnail-1.jpg" alt="Product Image">
+                    <div>
+                        <div>Pepperidge Farm Farmhouse Hearty White Bread</div>
+                        <div class="rating">★★★★☆</div>
+                        <div>
+                            <span class="price">$32.85</span>
+                            <span class="old-price">$33.8</span>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 prd-section">
+                <h3>Top Rated</h3>
+                <div class="prd-item">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/shop/thumbnail-1.jpg" alt="Product Image">
+                    <div>
+                        <div>Foster Farms Takeout Crispy Classic Buffalo Wings</div>
+                        <div class="rating">★★★★☆</div>
+                        <div>
+                            <span class="price">$32.85</span>
+                            <span class="old-price">$33.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="subscribe-banner">
+            <h2>Stay home & get your daily needs from our shop</h2>
+            <p>Start Your Daily Shopping with Nest Mart</p>
+            <div>
+                <input type="email" class="form-control d-inline" placeholder="Your email address">
+                <button class="btn btn-success">Subscribe</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer">
+    
+        <div class="footer-top">
+            <div class="footer-box">
+                <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/logo.svg">
+                <p>Awesome grocery store website template</p>
+                <p><strong>Address:</strong> 5171 W Campbell Ave undefined Kent, Utah 53127 United States</p>
+                <p><strong>Call Us:</strong> (+91) - 540-025-124553</p>
+                <p><strong>Email:</strong> sale@Nest.com</p>
+                <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            </div>
+            <div class="footer-box">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Delivery Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Support Center</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Account</h3>
+                <ul>
+                    <li><a href="#">Sign In</a></li>
+                    <li><a href="#">View Cart</a></li>
+                    <li><a href="#">My Wishlist</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Help Ticket</a></li>
+                    <li><a href="#">Shipping Details</a></li>
+                    <li><a href="#">Compare Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Corporate</h3>
+                <ul>
+                    <li><a href="#">Become a Vendor</a></li>
+                    <li><a href="#">Affiliate Program</a></li>
+                    <li><a href="#">Farm Business</a></li>
+                    <li><a href="#">Farm Careers</a></li>
+                    <li><a href="#">Our Suppliers</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                    <li><a href="#">Promotions</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Popular</h3>
+                <ul>
+                    <li><a href="#">Milk & Flavoured Milk</a></li>
+                    <li><a href="#">Butter and Margarine</a></li>
+                    <li><a href="#">Eggs Substitutes</a></li>
+                    <li><a href="#">Marmalades</a></li>
+                    <li><a href="#">Sour Cream and Dips</a></li>
+                    <li><a href="#">Tea & Kombucha</a></li>
+                    <li><a href="#">Cheese</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Install App</h3>
+                <p>From App Store or Google Play</p>
+                <div class="app-buttons">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/app-store.jpg" alt="App Store">
+                    <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/google-play.jpg" alt="Google Play">
+                </div>
+                <p>Secured Payment Gateways</p>
+                <img src="https://nest-frontend-v6.vercel.app/assets/imgs/theme/payment-method.png" alt="Payment Methods">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024, Nest - HTML Ecommerce Template. All rights reserved</p>
+            <p class="footer-phones">1900 - 6666 (Working 8:00 - 22:00) | 1900 - 8888 (24/7 Support Center)</p>
+         
+</section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/asseets/js/app.js"></script>
+</body>
+
+</html>
